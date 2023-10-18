@@ -1,5 +1,9 @@
 # should specify optional vs required
-
+variable "region"{
+  description = "It will allow to use different regions"
+  type = string
+  default = "eu-west-1"
+}
 variable "instance_name" {
   description = "Name of ec2 instance"
   type        = string

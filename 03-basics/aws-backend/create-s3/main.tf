@@ -1,17 +1,4 @@
 terraform {
-
-  #############################################################
-  ## AFTER RUNNING TERRAFORM APPLY (WITH LOCAL BACKEND)
-  ## YOU WILL UNCOMMENT THIS CODE THEN RERUN TERRAFORM INIT
-  ## TO SWITCH FROM LOCAL BACKEND TO REMOTE AWS BACKEND
-  #############################################################
-  backend "s3" {
-    bucket         = "devops-directive-tf-state-dee-learnen" # REPLACE WITH YOUR BUCKET NAME
-    key            = "terraform.tfstate"
-    region         = "eu-west-1"
-    dynamodb_table = "terraform-state-locking"
-    encrypt        = true
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"

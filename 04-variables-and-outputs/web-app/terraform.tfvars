@@ -1,4 +1,6 @@
-bucket_prefix = "devops-directive-web-app-data"
+bucket = "devops-directive-tf-state-dee-learnen"
+ami           = "ami-05a3d90809a151346"
+instance_type = "t2.micro"
 domain        = "devopsdeployed.com"
 db_name       = "mydb"
 db_user       = "foo"
